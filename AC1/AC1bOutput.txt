@@ -1,0 +1,5 @@
+7815 when including times it points at 0
+
+6676 when not (how natalie did it)
+
+both are wrong
