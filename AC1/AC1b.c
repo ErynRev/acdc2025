@@ -23,7 +23,7 @@ int main(void) {
     int deltnum; // Define change in num (deltnum)
     char direction; // Define direction positive or negative
 
-    fptr=fopen("./AC1/d1", "r");  // fptr then opens the AC1aNums.txt file as "r"ead only
+    fptr=fopen("./AC1/AC1aNums.txt", "r");  // fptr then opens the AC1aNums.txt file as "r"ead only
 
     while (fscanf(fptr, "%c%d\n", &direction, &deltnum) == 2) { // %c refers to the character and will go to direction character 
         oldpos = start;
