@@ -1,3 +1,5 @@
+// this dont work either
+
 #include <stdio.h>
 
 int main(void) {
@@ -7,7 +9,7 @@ int main(void) {
     char direction;
     int count = 0;
 
-    f=fopen("./AC1/AC1aNums.txt", "r");
+    f=fopen("./AC1/d1", "r");
 
     while (fscanf(f, "%c%d\n", &direction, &line_change) == 2) {
 
@@ -21,15 +23,19 @@ int main(void) {
         while (state > 99) {
             state -= 100;
             count += 1;
+        
         }
+
+
         while (state < 0) {
             state += 100;
             count += 1;
+        
         }
 
-        /*if (state == 0) {
+         if (state == 0) {
             count += 1;
-            }*/
+            }
 
         printf("%c\t%d\t%d\t%d\n", direction, line_change, count, state);
     }
