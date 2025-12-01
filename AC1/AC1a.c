@@ -27,7 +27,7 @@ wish me luck
 
 int main(void) {
     FILE *fptr; // This tells the FILE variable to point to fptr defined below
-    int count = 0;
+    int count = -1;
     int start = 50; // Defining the starting positon as 50
     int deltnum; // Define change in num (deltnum)
     char direction; // Define direction positive or negative
