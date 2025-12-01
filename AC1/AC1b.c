@@ -16,7 +16,7 @@ wish me luck
 
 int main(void) {
     FILE *fptr; // This tells the FILE variable to point to fptr defined below
-    int count = 0;
+    int count = -1;
     int start = 50; // Defining the starting positon as 50
     int newpos; //defining position end
     int oldpos; //def position old start
@@ -58,7 +58,9 @@ int main(void) {
         printf("%c\t%d\t%d\t%d\n", direction, deltnum, newpos, count);
 
         oldpos = newpos;
+    
     }
+    
 
     printf("%d\t%d \n", oldpos, count);
 
