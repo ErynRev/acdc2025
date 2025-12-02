@@ -23,17 +23,20 @@ while scanning
     scan for start int and end int;
 
 
-int main(void) {
+
 */
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 int main(void) {
     FILE *fptr;
-    // int digits;
+    size_t digits;
     int start;
     int end;
     int i;
+    char* pls; 
     int count;
     
     fptr = fopen("./AC2/AC2Nums", "r");
@@ -43,11 +46,12 @@ int main(void) {
     }
 
     while (fscanf(fptr, "%d-%d\n", &start, &end) == 2) {
-        for(i = start; i <= end; i++ ) {
+        for(i = start; i <= end; i ++) {
             printf("%d\t \n", i);
-
+            (i, pls, 10);
+            digits = strlen(pls);
         }
-
+    
         printf("%d\t and %d\t \n", start, end);
     }
 
