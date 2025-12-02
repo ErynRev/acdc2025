@@ -23,13 +23,13 @@ while scanning
     scan for start int and end int;
 
 
-
+int main(void) {
 */
 
 #include <stdio.h>
 
 int main(void) {
-    /*FILE *fptr;
+    FILE *fptr;
     // int digits;
     int start;
     int end;
@@ -42,12 +42,12 @@ int main(void) {
         return 1;
     }
 
-    // while (fscanf(fptr, "%d-%d\n", &start, &end) == 2) {
+    while (fscanf(fptr, "%d-%d\n", &start, &end) == 2) {
         
         printf("%d\t and %d\t \n", start, end);
     }
 
-*/
+
 return 0;
 
 }
