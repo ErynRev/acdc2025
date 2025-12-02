@@ -28,16 +28,19 @@ while scanning
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
+#include <math.h>
+
 
 int main(void) {
     FILE *fptr;
     size_t digits;
     int start;
     int end;
+    int split;
     int i;
-    char* pls; 
+    char pls[10]; 
     int count;
+    
     
     fptr = fopen("./AC2/AC2Nums", "r");
     if (!fptr) {
@@ -47,9 +50,14 @@ int main(void) {
 
     while (fscanf(fptr, "%d-%d\n", &start, &end) == 2) {
         for(i = start; i <= end; i ++) {
-            printf("%d\t \n", i);
-            itoa(i, pls, 10);
+            
+            sprintf(pls, "%d", i);
             digits = strlen(pls);
+
+            printf("%d\t and %lu \n", i, digits);
+            if (digits%2 == 0) {
+                split = i%(10 ** digits)
+            }
         }
     
         printf("%d\t and %d\t \n", start, end);
