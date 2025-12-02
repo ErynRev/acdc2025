@@ -48,7 +48,7 @@ int main(void) {
     while (fscanf(fptr, "%d-%d\n", &start, &end) == 2) {
         for(i = start; i <= end; i ++) {
             printf("%d\t \n", i);
-            (i, pls, 10);
+            itoa(i, pls, 10);
             digits = strlen(pls);
         }
     
