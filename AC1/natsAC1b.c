@@ -33,9 +33,9 @@ int main(void) {
         
         }
 
-         if (state == 0) {
+         /*if (state == 0) {
             count += 1;
-            }
+            }*/
 
         printf("%c\t%d\t%d\t%d\n", direction, line_change, count, state);
     }
