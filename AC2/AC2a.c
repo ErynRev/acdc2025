@@ -33,8 +33,8 @@ int main(void) {
     // int digits;
     int start;
     int end;
-    // int step;
-    // int count;
+    int i;
+    int count;
     
     fptr = fopen("./AC2/AC2Nums", "r");
     if (!fptr) {
@@ -43,7 +43,11 @@ int main(void) {
     }
 
     while (fscanf(fptr, "%d-%d\n", &start, &end) == 2) {
-        
+        for(i = start; i <= end; i++ ) {
+            printf("%d\t \n", i);
+
+        }
+
         printf("%d\t and %d\t \n", start, end);
     }
 
