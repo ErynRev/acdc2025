@@ -23,6 +23,8 @@ therefore im gonna have to:
 
 while scanning
     scan for start int and end int;
+    
+
 
 
 

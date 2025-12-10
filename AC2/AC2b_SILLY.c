@@ -27,6 +27,12 @@ while scanning
 
     LETS DO THIS THE SILLY WAY (CREDITS TO JESS)
 
+    but how?
+    -- divisible by all the 1 digit * 11, 101, 10101, 1010101, 101010101, 10101010101, 10101010101  etc
+    (anything that can divide by 1010, is also divisible by 11 so dont have to check)
+    (if divisible by 11 that means )
+    how can i make this easier? do i just write it like this?
+
 
 
 */
@@ -46,7 +52,7 @@ int main(void) {
     long i;
     char pls[10]; 
     long count;
-    long n; //num of digits
+    int n; //num of digits
     char new_str[n] = {'0', '\0'};
     
     
@@ -58,16 +64,10 @@ int main(void) {
 
     while (fscanf(fptr, "%ld-%ld\n", &start, &end) == 2) {
         for(i = start; i <= end; i ++) {
+             
             
-            sprintf(pls, "%ld", i);
-            digits = (int) ((strlen(pls)));
 
-            printf("num = %ld\t -- digits are %d \n", i, digits);
             
-            for (n = 2; n <= digits; n++) {
-                                // now i need to have the split n times, which is annoying
-                
-
             }
                 
             
