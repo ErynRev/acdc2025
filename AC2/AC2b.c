@@ -46,7 +46,7 @@ int main(void) {
     char pls[10]; 
     long count;
     long n; //num of digits
-    char new_str[n] = {'0', '\0'};
+
     
     
     fptr = fopen("./AC2/test", "r");

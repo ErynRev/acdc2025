@@ -1,1 +1,32 @@
 AC2a = 55916882972
+
+AC2bSILLY.1 = 76171500653  - too high
+ //
+
+split in half ac2nums
+
+1-24 =  67846858553 
+
+1-12 =  55931882298
+
+1-6 =   8241992205
+
+so 7-12 should be (55931882298 - 8241992205 =) 47689890093
+
+7-12 = 47689890093 -- correct
+then why break? is this correct?
+
+split more
+
+7-9 =   29699110108
+
+10-12 = 17990779985  which both equal 47689890093
+
+so if its too large is it breaking with the 10 digits?
+maybe?
+
+AC2bSILLY.2 = 55916882972 (surely not)
+
+ACbSILLY.3 = 76171500653 (again this is what was before,, so whats wrong with this?)
+
+may have to check thro each one GRAH,, GONNA LEAVE FOR NOW

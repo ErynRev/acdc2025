@@ -28,7 +28,7 @@ while scanning
 
 #include <stdio.h>
 #include <string.h>
-pri#include <math.h>
+#include <math.h>
 
 
 int main(void) {
@@ -43,7 +43,7 @@ int main(void) {
     long count;
     
     
-    fptr = fopen("./AC2/AC2Nums", "r");
+    fptr = fopen("AC2Nums", "r");
     if (!fptr) {
         printf("Error opening file.\n");
         return 1;
