@@ -1,0 +1,17 @@
+/*
+In Mathematics (specficially recreational mathematics) there is a idea such as repdigits (or monodigits)
+which are exactly what this check is for. They are natural numbers consisting of only repeated digits.
+This is a great check as they quite literally have a function for creating them. This function is
+
+n.(10^(log10(n)+1)+1)
+
+so how do we check if divisible? fuck youre right,, youd have to make this inverse
+
+best way to inverse would be through a inverse function,, which i have done before,,
+
+lets see 
+
+
+140732440522496
+
+

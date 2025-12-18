@@ -53,8 +53,10 @@ int main(void) {
     long palcheck;
     long i;
     long j;
+    long k = 0;
     long z;
     char pls[10]; 
+    long palindromearray[1000] = {0, 0};
     long count = 0;
     int n; //num of digits
 
@@ -104,30 +106,60 @@ int main(void) {
                 }
 
                 printf("%ld\n", palcheck);
-                
-                if (!(palcheck % 10 == 0)) {
-                    if (i % palcheck == 0) {
+
+
+                if ( j == 1) {
+                    if (i % palcheck == 0) { // checks if i is divisible by the pal
                         z = (long) i / palcheck;                 
 
                         sprintf(pls, "%ld", z);
                         digitpal = (long) ((strlen(pls)));
-                        if (((double) (digits - digitpal) /digitpal >= 1)) {
+                        
+                        if (((double) (digits - digitpal) /digitpal > 1)) {
                             count += (long) i; 
-                            printf("pal = %d\t and count = %ld\n", palcheck, count);          
-                            break;
+                            printf("pal = %d\t and count = %ld\n", palcheck, count);
+                            printf("Repeated digit is = %ld\t, Palindrome diviser is %ld\t \n", z, palcheck);
+                            
+                        }
+                    }
+                }
+                
+                else {
+                    if (!(palcheck % 10 == 0)) { // is it divisible by 10? theres no point checking these bc if theyre right they could just return a decimal which were not looking for 
+                        if (i % palcheck == 0) { // checks if i is divisible by the pal
+                            z = (long) i / palcheck;                 
+
+                            sprintf(pls, "%ld", z);
+                            digitpal = (long) ((strlen(pls)));
+                            if (!(z == 1)) {
+                                if (((double) (digits - digitpal) /digitpal > 1)) {
+                                    count += (long) i; 
+                                    printf("pal = %d\t and count = %ld\n", palcheck, count);
+                                    printf("Repeated digit is = %ld\t, Palindrome diviser is %ld\t \n", z, palcheck);
+                                    break;
+                                }
+                            }
+
+                            
                         }
                     }
                 }
                 
                 
+            
             }
+            
+
+            
        
                
             
         }
     
         printf("%ld\t and %ld\t ,, count is %ld\t \n", start, end, count);
+        
     }
+
 
 
 return 0;

@@ -30,3 +30,58 @@ AC2bSILLY.2 = 55916882972 (surely not)
 ACbSILLY.3 = 76171500653 (again this is what was before,, so whats wrong with this?)
 
 may have to check thro each one GRAH,, GONNA LEAVE FOR NOW
+
+
+
+
+
+hi again
+
+1-18 = 57354215219  
+19-37= 66571874652  
+
+
+I MIGHT JUST BE A FUCKEN DUMBASS
+numbers were a bit fucked
+output = 76171500653
+
+fuck never mind im just DUMBASS
+
+1-18 = 57354215219
+19-37= 18817285434
+
+same !  = 76171500653
+
+FUCK this number is too high,, so where is this edge case??
+the edge case is when we get the exact palindrome checking numbers we are using
+this wouldnt make sense as 1010101 is not a rep digit
+how do we stop? we check how many digits should be left when dividing - do  wn check for 111n
+
+
+evidence::
+"
+num = 1010101    -- digits are 7 
+1111111
+1010101
+pal = 1010101    and count = 4000999
+Repeated digit is = 1   , Palindrome diviser is 1010101  
+986483   and 1010101     ,, count is 4000999
+"
+that means when we get the exact match to a palindrome (which doesnt work for repeated digits) then we get an incorrect answer
+SOOOOO
+i gotta do its own thing for 1 n times and the other palindrome checkers,, easy! (i hope)
+
+make it so fn doesnt create 111111 ,, can make this ourselves
+
+989898 
+BRO YOU DONT NEED 1111 BC YOUCAN ALSO JUST DIVIDE BY 10101 AND GET IT right
+altho how is this with 11
+
+
+DONE !! YIPPEEE
+
+output from this for the whole search is = 
+--20339020307
+Ac2a--55916882972n IT CANT BE LOWER
+
+AC2b--76171500653
